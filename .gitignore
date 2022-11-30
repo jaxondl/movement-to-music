@@ -2,7 +2,7 @@
 .DS_Store
 video
 audio/original
-audio/constructed
+audio/output
 data/impact_points
 data/quantized_impacts
 
