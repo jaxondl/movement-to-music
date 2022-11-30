@@ -3,6 +3,8 @@
 video
 audio/original
 audio/constructed
+data/impact_points
+data/quantized_impacts
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
