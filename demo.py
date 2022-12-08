@@ -37,8 +37,8 @@ quantized_impacts = quantize_impact_points(impact_points, time_stamps, quant_par
 
 # strip audio
 print('\nStripping original audio...')
-video_original_path = os.path.join(input_dir, f'{vid_name}.mov')
-audio_original_path = os.path.join(input_dir, f'{vid_name}.wav')
+video_original_path = os.path.join(input_dir, f'{vid_name}_original.mp4')
+audio_original_path = os.path.join(input_dir, f'{vid_name}_original.wav')
 strip_audio(video_original_path, audio_original_path)
 
 # get instrument paths
@@ -48,15 +48,15 @@ instrument_paths = [os.path.join(instrument_dir, name) for name in instrument_na
 
 # construct audio
 print('\nConstructing output audio...')
-audio_original_path = os.path.join(input_dir, f'{vid_name}.wav')
-audio_output_path = os.path.join(output_dir, f'{vid_name}.wav')
+audio_original_path = os.path.join(input_dir, f'{vid_name}_original.wav')
+audio_output_path = os.path.join(output_dir, f'{vid_name}_output.wav')
 construct_audio(quantized_impacts, instrument_paths, audio_output_path, audio_load_path=audio_original_path)
 
 # combine audio and video
 print('\nConstructing output video...')
-video_original_path = os.path.join(input_dir, f'{vid_name}.avi')
-video_output_path = os.path.join(output_dir, f'{vid_name}.mp4')
-combine_audio_video(video_original_path, audio_output_path, video_output_path)
+video_poses_path = os.path.join(input_dir, f'{vid_name}_poses.mp4')
+video_output_path = os.path.join(output_dir, f'{vid_name}_output.mp4')
+combine_audio_video(video_poses_path, audio_output_path, video_output_path)
 
 # print end
 print(f'\nSuccess!\nOutput files in {output_dir}\n')
