@@ -82,7 +82,7 @@ def detect_impact_points(pose_x, pose_y, pose_c, time_stamps, limb_indices, gm_t
             plt.plot(impacts_plot / fps, grad_grad_mag[impacts_plot], 'x', label='Impacts')
             plt.title(f'Joint {limb} Gradient of Gradient Magnitude')
             plt.xlabel('Time [s]')
-            plt.ylabel('Magnitude')
+            plt.ylabel('Value')
             plt.xlim(start_second, start_second + num_seconds)
             plt.legend()
             plt.tight_layout()

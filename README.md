@@ -1,4 +1,5 @@
 # Movement to MIDI: Mapping Dance to Sound
+
 ECE 379K Term Project
 
 Collaborators:
@@ -7,8 +8,11 @@ Collaborators:
 - Sydney Thompson
 - Jinze Zhao
 
+Acknowledgements to Michael Schnebly for some of the ideas behind this project
+
 ## Demo Instructions
-Run these commands while in the base directory of the repo (requires Python 3.8)
+
+Run these commands while in the base directory of the repo (requires Anaconda and Python 3.8)
 
 ```
 conda create --yes -n music-to-midi python=3.8
