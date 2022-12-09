@@ -1,4 +1,4 @@
-# Movement to MIDI: Mapping Dance to Sound
+# Movement to Music: Mapping Dance to Sound
 
 ECE 379K Term Project
 
